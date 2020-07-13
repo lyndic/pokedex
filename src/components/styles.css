@@ -1,0 +1,101 @@
+/* Pokédex container */
+.pokedex-container {
+    margin: 0 auto;
+    width: 650px;
+    height: 70vh;
+    background-color: #cc0000;
+    box-shadow: 15px 15px 7px black;
+    border: maroon;
+    border-radius: 5px;
+}
+
+/* Pokédex top half */
+.top-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Pokédex screen */
+.top-screen {
+    margin: 6vh auto;
+    width: 65%;
+    height: 24vh;
+    background-color: white;
+    border: 20px solid maroon;
+    border-radius: 5px;
+}
+
+/* Container for speakers */
+.speaker-container {
+    margin: auto;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Speaker spacing and alignment */
+.speaker {
+    margin: 0 auto;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Speaker vent size, shape, and color */
+.speaker-vents {
+    margin: auto 0;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Bottom half of Pokédex */
+.bottom-container {
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Stats screen */
+.bottom-screen {
+    margin: auto;
+    width: 35%;
+    height: 20vh;
+    background-color: lightgrey;
+    border: 20px solid maroon;
+    border-radius: 5px;
+}
+
+/* Arrow styles */
+.arrow {
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    border: solid darkgrey;
+    border-width: 0 20px 20px 0;
+    /* display: inline-block; */
+    padding: 15px;
+}
+
+/* Right arrow */
+.right {
+    margin-right: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    box-shadow: 5px 8px 5px maroon;
+}
+
+/* Left arrow */
+.left {
+    margin-left: 50px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    box-shadow: 8px 5px 5px maroon;
+}
+
+/* Highlight arrows when user hovers with mouse */
+.arrow:hover {
+    opacity: .85;
+    cursor: pointer;
+}

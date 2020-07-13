@@ -1,5 +1,13 @@
 .App {
+  height: 100vh;
   text-align: center;
+  background: repeating-linear-gradient(
+    -55deg,
+    #3B4CCA,
+    #3B4CCA 30px,
+    #4A60FF 50px,
+    #4A60FF 50px
+  );
 }
 
 .App-logo {
@@ -9,13 +17,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +36,7 @@
   color: #61dafb;
 }
 
+/* Loading pokéball icon */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
