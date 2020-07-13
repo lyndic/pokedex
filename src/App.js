@@ -3,8 +3,7 @@ import pokeball from './pokeball.png';
 import logo from './pokedex_logo.png';
 import './App.css';
 
-import Pokedex from './components/Pokedex';
-import BottomScreen from './components/BottomScreen';
+import PokedexContainer from './components/PokedexContainer';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} />
       </header>
-      <Pokedex />
+      <PokedexContainer />
     </div>
   );
 }

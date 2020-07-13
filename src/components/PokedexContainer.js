@@ -12,3 +12,5 @@ class PokedexContainer extends Component {
         )
     }
 }
+
+export default PokedexContainer;
