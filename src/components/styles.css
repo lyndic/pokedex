@@ -9,7 +9,9 @@
     border-radius: 5px;
 }
 
-/* Pokédex top half */
+/*
+* Pokédex top half
+*/
 .top-container {
     display: flex;
     flex-direction: row;
@@ -20,9 +22,40 @@
     margin: 6vh auto;
     width: 65%;
     height: 24vh;
-    background-color: white;
+    background-color: lightblue;
     border: 20px solid maroon;
     border-radius: 5px;
+}
+
+/* Search box */
+.search-box {
+    margin-top: 4px;
+    margin-right: 2%;
+    width: 75%;
+    height: 20px;
+    /* background-color: #ffde00; */
+    border: 5px solid maroon;
+    border-radius: 5px;
+}
+
+.search-box:focus {
+    outline: 1px solid #cc0000;
+}
+
+/* Search Button */
+.search-btn {
+    padding: 3.5px 0;
+    width: 15%;
+    color: white;
+    background-color: #cc0000;
+    text-transform: uppercase;
+    border: 5px solid maroon;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    opacity: .9;
 }
 
 /* Container for speakers */
@@ -41,7 +74,7 @@
     flex-direction: column;
 }
 
-/* Speaker vent size, shape, and color */
+/* Speaker vents */
 .speaker-vents {
     margin: auto 0;
     width: 5px;
@@ -50,7 +83,10 @@
     border-radius: 50%;
 }
 
-/* Bottom half of Pokédex */
+
+/* 
+* Pokédex bottom half
+*/
 .bottom-container {
     margin-bottom: 6vh;
     display: flex;

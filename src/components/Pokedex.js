@@ -2,6 +2,10 @@ import React from 'react';
 
 import './styles.css';
 
+/**
+ *  Pokedex structure and appearance/styles
+ */
+
 export default function Pokedex() {
     return(
         <>
@@ -24,7 +28,10 @@ export default function Pokedex() {
                             <div className="speaker-vents"></div>
                         </div>
                     </div>
-                    <div className="top-screen"></div>
+                    <div className="top-screen">
+                        <input type="text" name="search" className="search-box" />
+                        <input type="submit" value="Find" className="search-btn" />
+                    </div>
                     <div className="speaker-container">
                         <div className="speaker">
                             <div className="speaker-vents"></div>
