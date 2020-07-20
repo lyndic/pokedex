@@ -15,12 +15,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 1s linear;
-  }
-}
-
 .App-header {
   /* background-color: #282c34; */
   min-height: 20vh;
@@ -36,12 +30,13 @@
   color: #61dafb;
 }
 
-/* Loading pokéball icon */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Pokédex container */
+.pokedex-container {
+  margin: 0 auto;
+  width: 650px;
+  height: 70vh;
+  background-color: #cc0000;
+  box-shadow: 15px 15px 7px black;
+  border: maroon;
+  border-radius: 5px;
 }

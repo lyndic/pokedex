@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'PKMN RBYGSC';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/PKMN_RBYGSC.ttf');
+}

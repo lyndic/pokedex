@@ -1,14 +1,3 @@
-/* Pokédex container */
-.pokedex-container {
-    margin: 0 auto;
-    width: 650px;
-    height: 70vh;
-    background-color: #cc0000;
-    box-shadow: 15px 15px 7px black;
-    border: maroon;
-    border-radius: 5px;
-}
-
 /*
 * Pokédex top half
 */
@@ -40,6 +29,16 @@
 
 .search-box:focus {
     outline: 1px solid #cc0000;
+}
+
+/* Welcome screen */
+.top-screen .welcome {
+    /* margin: 30px 0; */
+    padding: 20px;
+    font-family: 'PKMN RBYGSC';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 /* Search Button */
@@ -83,55 +82,27 @@
     border-radius: 50%;
 }
 
-
-/* 
-* Pokédex bottom half
-*/
-.bottom-container {
-    margin-bottom: 6vh;
-    display: flex;
-    flex-direction: row;
+.profile-img {
+    height: 20vmin;
 }
 
-/* Stats screen */
-.bottom-screen {
+.loading-pokeball {
     margin: auto;
-    width: 35%;
-    height: 20vh;
-    background-color: lightgrey;
-    border: 20px solid maroon;
-    border-radius: 5px;
+    height: 15vmin;
 }
 
-/* Arrow styles */
-.arrow {
-    margin: auto;
-    height: 30px;
-    width: 30px;
-    border: solid darkgrey;
-    border-width: 0 20px 20px 0;
-    /* display: inline-block; */
-    padding: 15px;
+@media (prefers-reduced-motion: no-preference) {
+    .loading-pokeball {
+        animation: Pokeball-logo-spin infinite .75s linear;
+    }
 }
 
-/* Right arrow */
-.right {
-    margin-right: 50px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    box-shadow: 5px 8px 5px maroon;
-}
-
-/* Left arrow */
-.left {
-    margin-left: 50px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    box-shadow: 8px 5px 5px maroon;
-}
-
-/* Highlight arrows when user hovers with mouse */
-.arrow:hover {
-    opacity: .85;
-    cursor: pointer;
+/* Loading pokéball icon animation*/
+@keyframes Pokeball-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }
