@@ -1,5 +1,7 @@
 # Pokédex
 
+![Pokédex Preview](./public/screenshot.png)
+
 ## Development
 
 To run the app in development mode.<br />
