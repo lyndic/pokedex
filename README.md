@@ -44,4 +44,5 @@ Technologies
 - [create-react-app](https://create-react-app.dev/)
 - [React](https://reactjs.org/)
 - [pokeapi-js-wrapper](https://github.com/PokeAPI/pokeapi-js-wrapper#pokeapi-js-wrapper-)
+- [pokeapi](https://pokeapi.co/)
 
