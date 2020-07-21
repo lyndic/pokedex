@@ -16,8 +16,13 @@ export default function PokedexBottom({pokemon, goToPrev, goToNext}) {
                 {pokemon.map(p => (
                     <div key={p} className="pokemon-stats">
                         <p>Name: &nbsp;{p.res.name}</p>
-                        <p>Height: &nbsp;{p.res.height}</p>
-                        <p>Weight: &nbsp;{p.res.weight}</p>
+                        <p>Height: &nbsp;{p.res.height}&nbsp;
+                            <span style={{textTransform:"lowercase"}}>dm</span>
+                        </p>
+                        <p>
+                            Weight: &nbsp;{p.res.weight}&nbsp;
+                            <span style={{textTransform:"lowercase"}}>hg</span>
+                        </p>
                     </div>
                 ))}
             </div>
