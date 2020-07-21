@@ -6,9 +6,8 @@ import pokeball from '../assets/pokeball.png';
 import './PokedexTop.css';
 
 /*
-*   Visual structure of Pokédex top half - screen, speakers, search bar, and Pokémon image
+**  Structure of top half of Pokédex
 */
-
 export default function PokedexTop({pokemon, loading, setCurrentPokemon, welcomeScreen}) {
     return (
         <div className="top-container">
