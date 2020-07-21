@@ -1,4 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
+import {useKey} from './hooks/useKey';
+
 import PokedexTop from './PokedexTop/PokedexTop';
 import PokedexBottom from './PokedexBottom/PokedexBottom';
 
@@ -18,7 +20,7 @@ export default function PokedexContainer() {
     const [welcomeScreen, setScreen] = useState(true);
 
     useEffect(() => {
-        // Set welcome screen if no pokemon is selected
+        // Set welcome screen if no pokemon is selected, else set Pokémon profile
         if (currentPokemon === '' || currentPokemon === undefined) {
             setScreen(true);
         } else {
@@ -45,21 +47,29 @@ export default function PokedexContainer() {
         }
     }, [currentPokemon]);
 
-    function goToNext(event) {
-        if (event) {
-            if (currentPokemon === 0 || currentPokemon === '') {
-                setCurrentPokemon(`1`);
-            } else if (nextPokemon !== '' && nextPokemon !== 0) {
-                setCurrentPokemon(`${nextPokemon}`);
-            }
-        }
-    }
-
+    // Changes state to previous Pokémon in Pokédex
     function goToPrev() {
+        // Prevents left arrow functionality if positioned at first Pokémon
         if (prevPokemon !== 0 && prevPokemon !== '') {
             setCurrentPokemon(`${prevPokemon}`);
         }
     }
+
+    // Changes to state to next Pokémon in Pokédex
+    function goToNext() {
+        // If no Pokémon selected, sets Pokémon to the first 
+        if (currentPokemon === 0 || currentPokemon === '') {
+            setCurrentPokemon(`1`);
+        } 
+        // Prevents right arrow if positioned at last Pokémon
+        else if (nextPokemon !== '' && nextPokemon !== 0) {
+            setCurrentPokemon(`${nextPokemon}`);
+        }
+    }
+
+    // Calls functions based on left and right arrow keys to change Pokémon state
+    useKey(37, goToPrev);
+    useKey(39, goToNext);
 
     return (
         <div className="App">
