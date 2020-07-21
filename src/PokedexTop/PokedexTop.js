@@ -33,8 +33,9 @@ export default function PokedexTop({pokemon, loading, setCurrentPokemon, welcome
                 {welcomeScreen ?  
                     <div className="welcome">
                         Type the name or ID of a Pokemon
-                        above or use the arrow buttons below to 
-                        browse the Pokedex.
+                        above... <br/>Use the arrow 
+                        keys or click on the arrow buttons below to 
+                        browse the Pokedex...
                     </div>
                 : null}
                 {loading ? 

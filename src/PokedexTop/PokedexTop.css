@@ -36,9 +36,10 @@
     /* margin: 30px 0; */
     padding: 20px;
     font-family: 'PKMN RBYGSC';
-    font-size: 20px;
+    font-size: 15px;
     line-height: 35px;
-    text-align: center;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 /* Search Button */
@@ -111,6 +112,11 @@
 @media (max-width: 850px) {
     .top-screen {
         height: 250px;
+    }
+
+    .top-screen .welcome {
+        padding: 5px;
+        font-size: 12px;
     }
 
     .profile-img {
