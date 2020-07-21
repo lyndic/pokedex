@@ -90,6 +90,7 @@ export default function PokedexContainer() {
                     goToNext={goToNext}
                 />
             </div>
+            <p className="copy">&nbsp;&copy; Lyndi Castrejon</p>
         </div>
     )
 }

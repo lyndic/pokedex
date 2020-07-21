@@ -31,6 +31,15 @@
   border-radius: 5px;
 }
 
+.copy {
+  position: absolute;
+  bottom: 0;
+  font-family: 'PKMN RBYGSC';
+  font-size: 10px;
+  float: left;
+  text-transform: uppercase;
+}
+
 @media(max-width: 850px) {
   .pokedex-container {
     width: 450px;
