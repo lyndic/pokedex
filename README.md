@@ -18,9 +18,11 @@ To test, simply run the development server and follow the steps below.<br />
 ```
 $ Use keyboard arrow keys or click on arrows to browse Pokémon
 
-$ Type in Pokémon name or ID in the search and hit "Enter" or click "Find" to search for specific Pokémon
+$ Type in Pokémon name or ID in the search and hit "Enter" or click "Find" to search
+  for specific Pokémon
 
-$ Mispelled names or Pokémon that don't exist in the PokéAPI will not be found and user will be redirected to the starting screen on Pokédex
+$ Mispelled names or Pokémon that don't exist in the PokéAPI will not be found; 
+  user will be redirected to the starting screen on Pokédex
 ```
 
 ## Codebase
