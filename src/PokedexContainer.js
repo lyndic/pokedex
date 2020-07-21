@@ -1,11 +1,11 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import {useKey} from './hooks/useKey';
 
 import PokedexTop from './PokedexTop/PokedexTop';
 import PokedexBottom from './PokedexBottom/PokedexBottom';
 
 import logo from './assets/pokedex_logo.png';
-import './App.css';
+import './Pokedex.css';
 
 // Import Pokedex api to fetch pokemon data
 const Pokedex = require('pokeapi-js-wrapper');
@@ -72,8 +72,8 @@ export default function PokedexContainer() {
     useKey(39, goToNext);
 
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className="pokedex-app">
+            <header className="pokedex-header">
                 <img src={logo} alt="pokedex text logo" />
             </header>
             <div className="pokedex-container">
