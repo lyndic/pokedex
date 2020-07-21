@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './Pokedex.css';
 import PokedexContainer from './PokedexContainer';
 
 ReactDOM.render(
