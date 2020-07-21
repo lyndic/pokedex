@@ -34,9 +34,16 @@
 .pokedex-container {
   margin: 0 auto;
   width: 650px;
-  height: 70vh;
+  height: 875px;
   background-color: #cc0000;
   box-shadow: 15px 15px 7px black;
   border: maroon;
   border-radius: 5px;
+}
+
+@media(max-width: 850px) {
+  .pokedex-container {
+    width: 450px;
+    height: 700px;
+  }
 }

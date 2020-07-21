@@ -1,5 +1,5 @@
 /*
-* Pokédex top half
+* Styles for Pokédex top half
 */
 .top-container {
     display: flex;
@@ -10,7 +10,7 @@
 .top-screen {
     margin: 6vh auto;
     width: 65%;
-    height: 24vh;
+    height: 300px;
     background-color: lightblue;
     border: 20px solid maroon;
     border-radius: 5px;
@@ -83,11 +83,12 @@
 }
 
 .profile-img {
-    height: 20vmin;
+    margin-top: 10px;
+    height: 200px;
 }
 
 .loading-pokeball {
-    margin: auto;
+    margin: 25px auto;
     height: 15vmin;
 }
 
@@ -104,5 +105,15 @@
     }
     to {
       transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 850px) {
+    .top-screen {
+        height: 250px;
+    }
+
+    .profile-img {
+        height: 175px;
     }
 }

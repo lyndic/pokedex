@@ -2,7 +2,7 @@
 * Styles for bottom half of Pokedex
 */
 .bottom-container {
-    margin-bottom: 6vh;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: row;
 }
@@ -11,7 +11,8 @@
 .bottom-screen {
     margin: auto;
     width: 35%;
-    height: 20vh;
+    height: 225px;
+    font-family: 'PKMN RBYGSC';
     background-color: lightgrey;
     border: 20px solid maroon;
     border-radius: 5px;
@@ -19,12 +20,13 @@
 
 /* Text styles on stat screen */
 .pokemon-stats {
-    margin: auto;
+    margin: 50px auto;
     width: max-content;
     height: max-content;
-    font-size: 20px;
-    text-align: left;
-    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Arrow styles */
@@ -58,4 +60,21 @@
 .arrow:hover {
     opacity: .85;
     cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .bottom-screen {
+        width: 33%;
+        height: 150px;
+    }
+
+    .pokemon-stats {
+        margin: 25px auto;
+        font-size: 8px;
+    }
+
+    .arrow {
+        height: 12px;
+        width: 12px;
+    }
 }
