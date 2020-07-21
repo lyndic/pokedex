@@ -5,7 +5,9 @@
 To run the app in development mode.<br />
 ```
 $ cd to pokedex
+
 $ npm i
+
 $ npm run start
 ```
 Pokédex will open at [http://localhost:3000](http://localhost:3000)
@@ -38,6 +40,7 @@ pokedex/
 ```
 
 Technologies
+
 - [create-react-app](https://create-react-app.dev/)
 - [React](https://reactjs.org/)
 - [pokeapi-js-wrapper](https://github.com/PokeAPI/pokeapi-js-wrapper#pokeapi-js-wrapper-)
